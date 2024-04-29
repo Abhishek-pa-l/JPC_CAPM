@@ -1,0 +1,177 @@
+<mvc:View
+    controllerName="com.sap.jpcapproval.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:uxap="sap.uxap"
+    xmlns:core="sap.ui.core"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <uxap:ObjectPageLayout
+                id="ObjectPageLayout1"
+                upperCaseAnchorBar="false"
+                showAnchorBar="true"
+                enableLazyLoading="true"
+            >
+                <uxap:sections>
+                    <uxap:ObjectPageSection id="_IDGenObjectPageSection1">
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection
+                                id="_IDGenObjectPageSubSection1"
+                                title=""
+                                titleUppercase="false"
+                            >
+                                <uxap:blocks>
+                                    <f:SimpleForm
+                                        id="supplierForm1"
+                                        layout="ResponsiveGridLayout"
+                                        title="General Information"
+                                        labelSpanXL="3"
+                                        labelSpanL="3"
+                                        labelSpanM="3"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                        emptySpanXL="3"
+                                        emptySpanL="3"
+                                        emptySpanM="3"
+                                        emptySpanS="12"
+                                    >
+                                        <Label
+                                            id="_IDGenLabel1"
+                                            text="ICO NO."
+                                            class="sapUiTinyMarginTop"
+                                        />
+                                        <Input
+                                            id="idContractorNameInput"
+                                            value=""
+                                        />
+
+                                        <Label
+                                            id="_IDGe"
+                                            text="Contract Title"
+                                            class="sapUiTinyMarginTop"
+                                        />
+                                        <Input
+                                            id="idContractorNumberInput"
+                                            value=""
+                                        />
+
+                                        <Label
+                                            id="_IDGe1"
+                                            text="Contract Type"
+                                            class="sapUiTinyMarginTop"
+                                        />
+                                        <Input
+                                            id="idContractNumberInput"
+                                            value=""
+                                        />
+                                        <Label
+                                            id="_IDGenL2"
+                                            text="Contract Number"
+                                            class="sapUiTinyMarginTop"
+                                        />
+                                        <Input
+                                            id="idContractDescriptionInput"
+                                            value=""
+                                        />
+                                        <Label
+                                            id="_IDGen12"
+                                            text="Supplier"
+                                            class="sapUiTinyMarginTop"
+                                        />
+                                        <Input
+                                            id="idFpalClassificationInput"
+                                            value=""
+                                        />
+                                    </f:SimpleForm>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+
+                            <uxap:ObjectPageSubSection
+                                id="_IDGenObjectPageSubSection2"
+                                title="Purpose"
+                            >
+                                <uxap:blocks>
+                                    <l:VerticalLayout
+                                        id="idVerticalLayout"
+                                        class="sapUiContentPadding"
+                                        width="100%"
+                                    >
+                                        <HBox alignItems="Center">
+                                            <Label
+                                                text="Select TinyMCE version:"
+                                                labelFor="idSelect"
+                                                class="sapUiSmallMarginEnd"
+                                            />
+                                            <Select
+                                                id="idSelect1"
+                                                change="handleSelect"
+                                            >
+                                                <core:Item
+                                                    key="TinyMCE6"
+                                                    text="RichTextEditor with TinyMCE6"
+                                                />
+                                                <core:Item
+                                                    key="TinyMCE5"
+                                                    text="RichTextEditor with TinyMCE5"
+                                                />
+                                            </Select>
+                                        </HBox>
+                                    </l:VerticalLayout>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+
+                             <uxap:ObjectPageSubSection
+                                id="_IDGenObjectPageSubSeddction2"
+                                title="Background"
+                            >
+                                <uxap:blocks>
+                                    <l:VerticalLayout
+                                        id="idVerticalLayout2"
+                                        class="sapUiContentPadding"
+                                        width="100%"
+                                    >
+                                        <HBox alignItems="Center">
+                                            <Label
+                                                text="Select TinyMCE version:"
+                                                labelFor="idSelect"
+                                                class="sapUiSmallMarginEnd"
+                                            />
+                                            <Select
+                                                id="idSelect"
+                                                change="handleSelect"
+                                            >
+                                                <core:Item
+                                                    key="TinyMCE6"
+                                                    text="RichTextEditor with TinyMCE6"
+                                                />
+                                                <core:Item
+                                                    key="TinyMCE5"
+                                                    text="RichTextEditor with TinyMCE5"
+                                                />
+                                            </Select>
+                                        </HBox>
+                                    </l:VerticalLayout>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+                </uxap:sections>
+            </uxap:ObjectPageLayout>
+        </content>
+        <footer>
+        <Toolbar >
+        <ToolbarSpacer ></ToolbarSpacer>
+         <Button text="aaa" press="www"/>
+        </Toolbar>
+       
+        </footer>
+    </Page>
+</mvc:View>
